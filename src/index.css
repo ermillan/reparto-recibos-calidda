@@ -1,1 +1,162 @@
 @import "tailwindcss";
+
+@theme {
+  --color-background: #f4f6f9;
+  --color-text: #333333;
+
+  /* Neutral gray scale */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-gray-950: #030712;
+
+  /* Primary colors based on #00A1DE */
+  --color-primary-50: #ecfbff;
+  --color-primary-100: #d9f6ff;
+  --color-primary-200: #c0f0ff;
+  --color-primary-300: #9de8ff;
+  --color-primary-400: #6ddcff;
+  --color-primary-500: #2ec6ff;
+  --color-primary-600: #00a1de;
+  --color-primary-700: #0081b8;
+  --color-primary-800: #006697;
+  --color-primary-900: #00527b;
+  --color-primary-950: #003e62;
+
+  /* Accent colors based on #00A34B (verde) */
+  --color-accent-50: #e8f9ef;
+  --color-accent-100: #d1f4df;
+  --color-accent-200: #b3eec9;
+  --color-accent-300: #8de6ac;
+  --color-accent-400: #5cda86;
+  --color-accent-500: #00bf58;
+  --color-accent-600: #00a34b;
+  --color-accent-700: #00873e;
+  --color-accent-800: #006f33;
+  --color-accent-900: #005b2a;
+  --color-accent-950: #004523;
+
+  /* Warn colors based on #f44336 (rojo) */
+  --color-warn-50: #ffebee;
+  --color-warn-100: #ffcdd2;
+  --color-warn-200: #ef9a9a;
+  --color-warn-300: #e57373;
+  --color-warn-400: #ef5350;
+  --color-warn-500: #f44336;
+  --color-warn-600: #e53935;
+  --color-warn-700: #d32f2f;
+  --color-warn-800: #c62828;
+  --color-warn-900: #b71c1c;
+  --color-warn-950: #7f0000;
+
+  /* Amarillo colors based on #FAB200 */
+  --color-amarillo-50: #fff8e1;
+  --color-amarillo-100: #ffecb3;
+  --color-amarillo-200: #ffe082;
+  --color-amarillo-300: #ffd54f;
+  --color-amarillo-400: #ffca28;
+  --color-amarillo-500: #ffc107;
+  --color-amarillo-600: #fab200;
+  --color-amarillo-700: #f9a825;
+  --color-amarillo-800: #f57f17;
+  --color-amarillo-900: #ef6c00;
+  --color-amarillo-950: #e65100;
+
+  /* Additional colors from root */
+  --color-calidda: #00a1de;
+  --color-calidda-hover: #2ec6ff;
+  --color-verde: #00a34b;
+  --color-verde-hover: #00bf58;
+  --color-amarillo: #fab200;
+  --color-rojo: #ff5252;
+  --color-celeste: #ecfbfc;
+  --color-gris-1: #868885;
+  --color-gris-3: #d9d9d9;
+  --color-titulo: #003865;
+
+  /* Backgrounds and others */
+  --color-bg: #f4f6f9;
+  --color-card-bg: #ffffff;
+  --color-sidebar-bg: #004c97;
+  --color-sidebar-text: #ffffff;
+  --color-table-header-bg: #e6f5fb;
+  --color-table-row-hover: #f0f9ff;
+  --color-success-bg: #4caf50;
+  --color-secondary-bg: #999999;
+
+  /* Font sizes */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-2xl: 1.5rem; /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2.25rem; /* 36px */
+  --font-size-medium: 14px; /* From root --font-medium */
+
+  /* Line heights */
+  --line-height-xs: 1rem;
+  --line-height-sm: 1.25rem;
+  --line-height-md: 1.5rem;
+  --line-height-lg: 1.75rem;
+  --line-height-xl: 1.75rem;
+
+  /* Shadows */
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+  /* Gradients */
+  --linear-gradient: linear-gradient(180deg, #00a34b 0%, #27c2f3 100%);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.text-primary {
+  color: var(--color-primary-500);
+}
+
+.text-accent {
+  color: var(--color-accent-500);
+}
+
+.text-warn {
+  color: var(--color-warn-500);
+}
+
+.bg-primary {
+  background-color: var(--color-primary-500);
+}
+
+.bg-accent {
+  background-color: var(--color-accent-500);
+}
+
+.bg-success {
+  background-color: var(--color-success-bg);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary-bg);
+}
+
+.text-body {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+}
+
+.text-caption {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  color: var(--color-gray-500);
+}

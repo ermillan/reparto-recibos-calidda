@@ -1,5 +1,5 @@
-import type { User } from "@/domain/entities/User";
+import type { User } from "@/domain/entities/User"
 
-export interface UserRepository {
-  getUserById(id: string): Promise<User>;
+export type UserRepository = {
+  getUserById(id: string): Promise<User>
 }
